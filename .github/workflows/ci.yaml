@@ -45,7 +45,7 @@ jobs:
         uses: simple-elf/allure-report-action@v1.7
         if: always()  # Always run this step, even if previous steps fail
         with:
-          allure_history: gh-pages/allure-history  # Path to the history directory in the checked-out gh-pages branch
+          allure_history: allure-history  # Path to the history directory in the checked-out gh-pages branch
           allure_results: src/allure-results  # Path to the test results
 
       - name: Publish test report
